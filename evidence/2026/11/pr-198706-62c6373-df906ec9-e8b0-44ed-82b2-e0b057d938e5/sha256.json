@@ -1,0 +1,197 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 4600,
+    "sha256": "294e0ae48285918916a44e6b61afc916c2f7aa402f9632f36dfdcc6b79188d5a"
+  },
+  {
+    "path": "gateway-logs/fresh-gateway.log",
+    "bytes": 27683,
+    "sha256": "d94a9ae28d34e41dfcda0745982b9d13eff7cb6a1d9595eb9f0e06d40ec10506"
+  },
+  {
+    "path": "gateway-logs/fresh-restart-gateway.log",
+    "bytes": 44810,
+    "sha256": "ed55b9f8e1e3a6b5f60a3968d30dd73a9f1d1f4d6ec4a5f47df26e277a5c3a5e"
+  },
+  {
+    "path": "gateway-logs/legacy-read-gateway.log",
+    "bytes": 26708,
+    "sha256": "3c977cb1ed026fba2f4861952d1f62f6fff926337feb450f5e5855c541a948e0"
+  },
+  {
+    "path": "gateway-logs/legacy-restart-gateway.log",
+    "bytes": 27199,
+    "sha256": "f9dc5d41189f93394c6a9570539c24272be41ab34dcedc54cd8662fd013e6385"
+  },
+  {
+    "path": "gateway-logs/legacy-setup-gateway.log",
+    "bytes": 26711,
+    "sha256": "801e9f396786710c0e705f399e3cfbf303e44c9ebdbd72b6f22b83ce1d0a324f"
+  },
+  {
+    "path": "gateway-logs/setup-attempt-1-gateway.log",
+    "bytes": 10840,
+    "sha256": "eebc10fcfad6f22ccdab9c9001d07db123761d86e4e1ffa0ba91715cd0dc30e1"
+  },
+  {
+    "path": "gateway-logs/stable-gateway.log",
+    "bytes": 15804,
+    "sha256": "fa64ff15fe4f6aa75bf8c7f81ce48d9b802f7925d240cab87bbed93ff119de46"
+  },
+  {
+    "path": "gateway-logs/upgrade-gateway.log",
+    "bytes": 28954,
+    "sha256": "4ffc4a72d91a784fb9d7880558efc28a7107125af6f951b3bd420894a1f26cb7"
+  },
+  {
+    "path": "gateway-logs/upgrade-restart-gateway.log",
+    "bytes": 30828,
+    "sha256": "7396792251fce8ad940dd50950f4d5077d96a782e91b2b347acb1269b43c3929"
+  },
+  {
+    "path": "harness/gateway-proof.mjs.txt",
+    "bytes": 13885,
+    "sha256": "b38d82b5ecba64a255e5f6abd943983dd46d344ecc5523196600b44ba9afbcd6"
+  },
+  {
+    "path": "harness/proof-main-evidence.ts.txt",
+    "bytes": 9069,
+    "sha256": "b222ead5b1275f1974c147482463136a14a3dab2f580ea25c37edb2f3e9e392f"
+  },
+  {
+    "path": "harness/seed-main-format.mjs.txt",
+    "bytes": 1899,
+    "sha256": "17e7fe8074331dabc459bc52cf8258102a1cd0ab64a7b4921b15e811f5177467"
+  },
+  {
+    "path": "install-build-logs/build.log",
+    "bytes": 486459,
+    "sha256": "001c8cc8eea824dab48e3d805175e1babd5fa8009ec985a2caaa747d61f3d36d"
+  },
+  {
+    "path": "install-build-logs/install.log",
+    "bytes": 8043,
+    "sha256": "366d571712da45e4c281855aac413edffdc2eaf7411b0a3cfc891c9ee57571a8"
+  },
+  {
+    "path": "install-build-logs/stable-install.log",
+    "bytes": 764,
+    "sha256": "6565d1657a1682de68949848fbc52cabf544d18f1ffd446a1f87a82c1efccfec"
+  },
+  {
+    "path": "provenance.json",
+    "bytes": 956,
+    "sha256": "9420c8b6cbd4546f1aa69657a201b426fa03da06c22b59537e95812525b85b3d"
+  },
+  {
+    "path": "snapshots/fresh-after-restart.json",
+    "bytes": 4040,
+    "sha256": "1cc7d79bae104a877b5ee89a22772b6867b4ed72c4514187b64807f95840786b"
+  },
+  {
+    "path": "snapshots/fresh-completed.json",
+    "bytes": 3113,
+    "sha256": "8c0e18aca71db6957e883c01d8c15c076aabc149850b89f7f3f1a8ea8904d01f"
+  },
+  {
+    "path": "snapshots/fresh-lifecycle.json",
+    "bytes": 1718,
+    "sha256": "e3c9a94fd65482b6d0d499ddc0a90db706e970786e6072153615d650b7ad4d7a"
+  },
+  {
+    "path": "snapshots/fresh-verified-after-write.json",
+    "bytes": 4040,
+    "sha256": "cde43f522bc336b52c557dc6d12d564f22410d56017effa5268ca3e8c51e000f"
+  },
+  {
+    "path": "snapshots/legacy-after-restart.json",
+    "bytes": 25934,
+    "sha256": "31968e09813466ed41561308490fd10af6d7e8adc097e22a922b33f93ed96625"
+  },
+  {
+    "path": "snapshots/legacy-created.json",
+    "bytes": 24446,
+    "sha256": "e116c5ae08f0d5f2d1c2e1de3a0a46254c78b2d8dbde5ff9bc4ed65e003ee2db"
+  },
+  {
+    "path": "snapshots/legacy-expected-verdict.json",
+    "bytes": 665,
+    "sha256": "159c3391cb36295045481c5067e9806c07d19f2a6dcb5ef084013829f374cc6c"
+  },
+  {
+    "path": "snapshots/legacy-first-write.json",
+    "bytes": 25819,
+    "sha256": "6636d4c9aaa9cbd548ae6bb9e368b1fc1c63cb491f8700e3cc438ec2d3178b24"
+  },
+  {
+    "path": "snapshots/legacy-read-before-write.json",
+    "bytes": 25961,
+    "sha256": "87621a8f741700882c2a319a3f882515cd3e9a4862ffc99ea2292c823f60d654"
+  },
+  {
+    "path": "snapshots/legacy-result.json",
+    "bytes": 194,
+    "sha256": "bc48f26b6461c8553d2aea17ec498144c85c5b0b00583ece112bbc8665ce9015"
+  },
+  {
+    "path": "snapshots/legacy-seeded.json",
+    "bytes": 25961,
+    "sha256": "1e7ee8167a70bea1489fa0ea6665d0d8cc44ef6ae2a124e50c262bd3674b557a"
+  },
+  {
+    "path": "snapshots/legacy-verified-after-write.json",
+    "bytes": 25819,
+    "sha256": "6636d4c9aaa9cbd548ae6bb9e368b1fc1c63cb491f8700e3cc438ec2d3178b24"
+  },
+  {
+    "path": "snapshots/post-upgrade-completed.json",
+    "bytes": 3120,
+    "sha256": "e4e027b6d70d18ba4e0e6daefd9624d470ad9ae82e874d3f7048b91902713838"
+  },
+  {
+    "path": "snapshots/post-upgrade-lifecycle.json",
+    "bytes": 1725,
+    "sha256": "e338ad5e8900616137cbf6e2383866a9ee0300a5556dba6b5438fa2e18f1f229"
+  },
+  {
+    "path": "snapshots/result.json",
+    "bytes": 328,
+    "sha256": "a5bc8502b6d7f8ac16d0cce6a0a727cc510b164c052adfc8a31a1e1862b69a9e"
+  },
+  {
+    "path": "snapshots/stable-before-upgrade.json",
+    "bytes": 3114,
+    "sha256": "d0c0eb336aa1fdf417b2be45f74f6b265ad3e983a57304538d4843cc2e8f4be2"
+  },
+  {
+    "path": "snapshots/stable-completed.json",
+    "bytes": 3114,
+    "sha256": "d0c0eb336aa1fdf417b2be45f74f6b265ad3e983a57304538d4843cc2e8f4be2"
+  },
+  {
+    "path": "snapshots/stable-lifecycle.json",
+    "bytes": 1719,
+    "sha256": "a3f6d775a354e06809350e687f0398b7ac0a4b95daf0eabae4fca39ddb0e2252"
+  },
+  {
+    "path": "snapshots/upgrade-after-restart.json",
+    "bytes": 4041,
+    "sha256": "c069b18e5ed5903c78e3391bfa2ce0ca5a77a708a7730d9b4d41ee064a72cb38"
+  },
+  {
+    "path": "snapshots/upgrade-verified-after-write.json",
+    "bytes": 4041,
+    "sha256": "f375b1a26b8d42782d920601448318db648cbe13e25120d92bc99c4ed0c35fb8"
+  },
+  {
+    "path": "stored-data-comparison.json",
+    "bytes": 1107,
+    "sha256": "9deaaa3988c194ffa26d70570e229f4aefe5b4e8458f858a2bf99755bc5cf177"
+  },
+  {
+    "path": "terminal-output.txt",
+    "bytes": 3956,
+    "sha256": "10169eade4df1d8c12ca3246890796856abb8e519dc32b3f4d2b193c2b056d8f"
+  }
+]

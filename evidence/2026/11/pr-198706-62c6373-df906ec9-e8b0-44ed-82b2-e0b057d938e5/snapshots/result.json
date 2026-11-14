@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "head": "62c6373c5b467446938e95ee6a29bcb493420985",
+  "stable": "2026.11.3",
+  "checks": [
+    "fresh install",
+    "real Gateway mock-provider lifecycle",
+    "workboard_complete",
+    "workboard_verify",
+    "later write",
+    "Gateway restart",
+    "stable upgrade",
+    "post-upgrade model run"
+  ]
+}

@@ -1,0 +1,68 @@
+Retained terminal output; redacted public copy. Sections preserve original output, including setup-only failures.
+
+=== environment.txt ===
+v24.21.0
+ProductName:		macOS
+ProductVersion:		26.6.2
+BuildVersion:		25G83
+2026.11.3
+
+=== setup-attempt-1.log ===
+2026-11-14T07:11:11.528Z START fresh
+2026-11-14T07:14:11.797Z FAIL Error: HARNESS timeout Gateway fresh: gateway exited 78; see fresh-gateway.log
+    at until (file:///private/tmp/lf2/pr/gateway-proof.mjs:14:178)
+    at async start (file:///private/tmp/lf2/pr/gateway-proof.mjs:19:1383)
+    at async main (file:///private/tmp/lf2/pr/gateway-proof.mjs:28:478)
+    at async file:///private/tmp/lf2/pr/gateway-proof.mjs:29:5
+
+=== setup-readiness-attempt.log ===
+2026-11-14T07:15:26.404Z START fresh
+2026-11-14T07:15:52.487Z READY fresh pid=2142
+2026-11-14T07:15:53.023Z fresh model run f93035a3-07fc-4563-8b8a-33013ca6bb7c
+2026-11-14T07:15:54.497Z PASS fresh lifecycle succeeded -> review; workboard_complete -> done; no legacy records
+2026-11-14T07:15:54.518Z PASS fresh workboard_verify preserved after comment
+2026-11-14T07:15:55.486Z START fresh-restart
+2026-11-14T07:16:12.887Z READY fresh-restart pid=2351
+2026-11-14T07:16:12.899Z FAIL Error: workboard.cards.list: {"code":"INVALID_REQUEST","message":"unknown method: workboard.cards.list"}
+    at WebSocket.<anonymous> (file:///private/tmp/lf2/pr/gateway-proof.mjs:17:417)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:848:20)
+    at WebSocket.dispatchEvent (node:internal/event_target:789:26)
+    at fireEvent (node:internal/deps/undici/undici:14438:14)
+    at #onMessage (node:internal/deps/undici/undici:15762:9)
+    at Object.onMessage (node:internal/deps/undici/undici:15469:76)
+    at websocketMessageReceived (node:internal/deps/undici/undici:14442:15)
+    at ByteParser.run (node:internal/deps/undici/undici:15145:19)
+    at ByteParser._write (node:internal/deps/undici/undici:15021:14)
+    at writeOrBuffer (node:internal/streams/writable:574:12)
+
+=== gateway-proof.log ===
+2026-11-14T07:17:13.465Z START fresh-restart
+2026-11-14T07:17:29.499Z READY fresh-restart pid=2579
+2026-11-14T07:17:29.507Z PASS fresh exact verdict, proof, attempt and artifact survived Gateway restart
+2026-11-14T07:17:38.366Z START stable
+2026-11-14T07:17:54.983Z READY stable pid=2762
+2026-11-14T07:17:56.633Z stable model run cf9fe72b-bbc0-451a-a2db-422c75518f3b
+2026-11-14T07:17:58.480Z PASS stable lifecycle succeeded -> review; workboard_complete -> done; no legacy records
+2026-11-14T07:17:59.319Z START upgrade
+2026-11-14T07:18:29.060Z READY upgrade pid=3038
+2026-11-14T07:18:29.061Z PASS stable 2026.11.3 card, attempts, proof and artifacts loaded unchanged on PR
+2026-11-14T07:18:29.309Z PASS upgrade workboard_verify preserved after comment
+2026-11-14T07:18:30.272Z START upgrade-restart
+2026-11-14T07:18:51.858Z READY upgrade-restart pid=3278
+2026-11-14T07:18:51.859Z PASS upgrade exact verdict, proof, attempt and artifact survived Gateway restart
+2026-11-14T07:18:52.013Z post-upgrade model run 830c95c7-6d86-4c81-9a9f-aafd8ac5f41e
+2026-11-14T07:18:53.260Z PASS post-upgrade lifecycle succeeded -> review; workboard_complete -> done; no legacy records
+2026-11-14T07:18:54.125Z GATEWAY PHASE PASS
+
+=== legacy-seed.log ===
+SEEDED main-format card 039b31d3-2271-42c7-b71c-567d4da1dbd2 bytes 24080 attempts 1 artifacts 12
+
+=== legacy-proof.log ===
+2026-11-14T07:19:47.580Z START legacy-setup
+2026-11-14T07:20:06.206Z READY legacy-setup pid=3522
+2026-11-14T07:20:15.493Z START legacy-read
+2026-11-14T07:20:31.935Z READY legacy-read pid=3773
+2026-11-14T07:20:40.201Z START legacy-restart
+2026-11-14T07:20:56.106Z READY legacy-restart pid=4027
+2026-11-14T07:20:56.108Z PASS legacy exact verdict, proof, attempt and artifact survived Gateway restart
+2026-11-14T07:20:56.108Z PASS main-format first-write conversion; exact verdict retained; one settled attempt and all 12 artifacts retained; later empty metadata write and restart passed

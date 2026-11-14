@@ -1,0 +1,59 @@
+{
+  "id": "9b3e6eac-f571-41c5-9bb3-0c9ce9b67c04",
+  "title": "stable lifecycle and completion",
+  "status": "review",
+  "priority": "normal",
+  "labels": [],
+  "position": 1000,
+  "createdAt": 1794640674985,
+  "updatedAt": 1794640678117,
+  "agentId": "main",
+  "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a",
+  "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b",
+  "execution": {
+    "id": "9b3e6eac-f571-41c5-9bb3-0c9ce9b67c04:agent-session",
+    "kind": "agent-session",
+    "mode": "autonomous",
+    "status": "review",
+    "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a",
+    "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b",
+    "startedAt": 1794640674985,
+    "updatedAt": 1794640678112
+  },
+  "startedAt": 1794640674985,
+  "events": [
+    {
+      "id": "a519c866-2dca-42be-9fd6-37f915f880da",
+      "kind": "created",
+      "at": 1794640674985,
+      "toStatus": "running",
+      "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a"
+    },
+    {
+      "id": "fd47caf5-e98d-4230-87c9-b13a2e1d20e4",
+      "kind": "moved",
+      "at": 1794640678117,
+      "fromStatus": "running",
+      "toStatus": "review"
+    }
+  ],
+  "metadata": {
+    "attempts": [
+      {
+        "id": "7b2c66d0-25b8-4a79-8659-b5e12bae1b9f",
+        "status": "succeeded",
+        "startedAt": 1794640674985,
+        "endedAt": 1794640678112,
+        "mode": "autonomous",
+        "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a",
+        "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b"
+      }
+    ],
+    "automation": {
+      "workspaceAccess": {
+        "unrestricted": true
+      }
+    },
+    "lifecycleStatusSourceUpdatedAt": 1794640678055
+  }
+}

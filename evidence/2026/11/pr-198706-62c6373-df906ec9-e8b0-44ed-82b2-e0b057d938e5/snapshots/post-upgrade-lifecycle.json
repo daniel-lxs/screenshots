@@ -1,0 +1,59 @@
+{
+  "id": "4fc5f9ec-cff3-43ce-936e-897be1cc9f29",
+  "title": "post-upgrade lifecycle and completion",
+  "status": "review",
+  "priority": "normal",
+  "labels": [],
+  "position": 1000,
+  "createdAt": 1794640731860,
+  "updatedAt": 1794640733097,
+  "agentId": "main",
+  "sessionKey": "agent:main:subagent:f1796219-77ea-4f97-94c3-a60e2d51fa3f",
+  "runId": "830c95c7-6d86-4c81-9a9f-aafd8ac5f41e",
+  "execution": {
+    "id": "4fc5f9ec-cff3-43ce-936e-897be1cc9f29:agent-session",
+    "kind": "agent-session",
+    "mode": "autonomous",
+    "status": "review",
+    "sessionKey": "agent:main:subagent:f1796219-77ea-4f97-94c3-a60e2d51fa3f",
+    "runId": "830c95c7-6d86-4c81-9a9f-aafd8ac5f41e",
+    "startedAt": 1794640731860,
+    "updatedAt": 1794640733089
+  },
+  "startedAt": 1794640731860,
+  "events": [
+    {
+      "id": "bbf6601f-3087-45d0-b1b2-6bc6d769a9e9",
+      "kind": "created",
+      "at": 1794640731860,
+      "toStatus": "running",
+      "sessionKey": "agent:main:subagent:f1796219-77ea-4f97-94c3-a60e2d51fa3f"
+    },
+    {
+      "id": "e80084b0-5d8e-4adf-bdac-7fbd888025a1",
+      "kind": "moved",
+      "at": 1794640733097,
+      "fromStatus": "running",
+      "toStatus": "review"
+    }
+  ],
+  "metadata": {
+    "attempts": [
+      {
+        "id": "65144346-75bc-4b9e-b457-4c7a9903cc9a",
+        "status": "succeeded",
+        "startedAt": 1794640731860,
+        "endedAt": 1794640733089,
+        "mode": "autonomous",
+        "sessionKey": "agent:main:subagent:f1796219-77ea-4f97-94c3-a60e2d51fa3f",
+        "runId": "830c95c7-6d86-4c81-9a9f-aafd8ac5f41e"
+      }
+    ],
+    "automation": {
+      "workspaceAccess": {
+        "unrestricted": true
+      }
+    },
+    "lifecycleStatusSourceUpdatedAt": 1794640733089
+  }
+}

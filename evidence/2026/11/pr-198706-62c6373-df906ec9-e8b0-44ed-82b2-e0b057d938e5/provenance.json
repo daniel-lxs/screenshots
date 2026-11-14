@@ -1,0 +1,15 @@
+{
+  "head": "62c6373c5b467446938e95ee6a29bcb493420985",
+  "stablePackage": "openclaw@2026.11.3",
+  "source": "git archive of pinned PR head; pnpm install --frozen-lockfile; pnpm build:runtime",
+  "sourceArchiveSha256": "d9c104f6fa76ebba879102abe2ba5a31637c0c4a38efccef53b49cfed1eb0ada",
+  "mainFormatBuilderSourceCommit": "520f18975936d49ffc1cf8d02bbd98c4b7981c14",
+  "mainFormatBuilderSourceSha256": "db1cf41fee89112b7e54abced541f741e4d7b1fa79b5a6ae0ea3fc8c5ff4757c",
+  "redactions": "IPs, credential values (including synthetic credentials), non-public endpoints, user/temp paths, emails, phone-like strings and mock model labels. ANSI color escapes and trailing horizontal whitespace removed. Card/run/attempt/proof/artifact/verdict IDs and timestamps retained.",
+  "repeatVmRun": false,
+  "runtime": {
+    "guestOS": "macOS 26.6.2",
+    "harnessAndStableGateway": "Node 24.21.0",
+    "prGateway": "Bun 1.4.4; Node compatibility identity 26.12.1"
+  }
+}

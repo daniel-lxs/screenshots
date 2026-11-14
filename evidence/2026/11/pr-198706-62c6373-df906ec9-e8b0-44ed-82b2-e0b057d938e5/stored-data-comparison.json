@@ -1,0 +1,37 @@
+{
+  "head": "62c6373c5b467446938e95ee6a29bcb493420985",
+  "derivedFromRetainedSnapshots": true,
+  "upgrade": {
+    "before": "snapshots/stable-before-upgrade.json",
+    "after": "snapshots/upgrade-verified-after-write.json",
+    "unchangedStoredData": {
+      "attempts": true,
+      "proof": true,
+      "artifacts": true
+    },
+    "afterRestart": "snapshots/upgrade-after-restart.json"
+  },
+  "mainFormatConversion": {
+    "before": "snapshots/legacy-read-before-write.json",
+    "afterFirstWrite": "snapshots/legacy-first-write.json",
+    "afterRestart": "snapshots/legacy-after-restart.json",
+    "sameCardId": true,
+    "removedEvidence": true,
+    "verdictPreservedExceptKindAndClaimId": true,
+    "existingAttemptCount": 1,
+    "settledAttemptCount": 1,
+    "sameAttemptId": true,
+    "sameRunId": true,
+    "attemptStatusBefore": "running",
+    "attemptStatusAfter": "succeeded",
+    "artifactsEqual": true,
+    "artifactCount": 12,
+    "restartVerdictEqual": true
+  },
+  "freshVerificationRestart": {
+    "attempts": true,
+    "proof": true,
+    "artifacts": true,
+    "verifications": true
+  }
+}

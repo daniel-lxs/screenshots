@@ -1,0 +1,108 @@
+{
+  "id": "ecf25bed-79b9-481c-adb9-bb5f90b33bb5",
+  "title": "fresh lifecycle and completion",
+  "status": "done",
+  "priority": "normal",
+  "labels": [],
+  "position": 1000,
+  "createdAt": 1794640552493,
+  "updatedAt": 1794640554494,
+  "agentId": "main",
+  "sessionKey": "agent:main:subagent:6e7bcaa4-7427-4279-a3e3-c1ed2dca1df4",
+  "runId": "f93035a3-07fc-4563-8b8a-33013ca6bb7c",
+  "execution": {
+    "id": "ecf25bed-79b9-481c-adb9-bb5f90b33bb5:agent-session",
+    "kind": "agent-session",
+    "mode": "autonomous",
+    "status": "review",
+    "startedAt": 1794640552493,
+    "updatedAt": 1794640554317,
+    "sessionKey": "agent:main:subagent:6e7bcaa4-7427-4279-a3e3-c1ed2dca1df4",
+    "runId": "f93035a3-07fc-4563-8b8a-33013ca6bb7c"
+  },
+  "startedAt": 1794640552493,
+  "events": [
+    {
+      "id": "160bc2db-e80e-45da-9722-991ce104135e",
+      "kind": "created",
+      "at": 1794640552493,
+      "toStatus": "running",
+      "sessionKey": "agent:main:subagent:6e7bcaa4-7427-4279-a3e3-c1ed2dca1df4"
+    },
+    {
+      "id": "dc6bda12-13d2-4b62-a3c8-f2a12f49228c",
+      "kind": "moved",
+      "at": 1794640554325,
+      "fromStatus": "running",
+      "toStatus": "review"
+    },
+    {
+      "id": "4d79ce3a-29d3-45ed-92ec-775d30b3dbdd",
+      "kind": "claimed",
+      "at": 1794640554480
+    },
+    {
+      "id": "5165740d-c775-4890-b33c-8f94ecc627c2",
+      "at": 1794640554494,
+      "kind": "moved",
+      "fromStatus": "review",
+      "toStatus": "done"
+    }
+  ],
+  "metadata": {
+    "attempts": [
+      {
+        "id": "9baa1674-8131-48d9-949d-2fd8c32e8334",
+        "status": "succeeded",
+        "startedAt": 1794640552493,
+        "mode": "autonomous",
+        "sessionKey": "agent:main:subagent:6e7bcaa4-7427-4279-a3e3-c1ed2dca1df4",
+        "runId": "f93035a3-07fc-4563-8b8a-33013ca6bb7c",
+        "endedAt": 1794640554317
+      }
+    ],
+    "comments": [
+      {
+        "id": "2ff16b92-655a-4aad-83f1-c6827ba43bc4",
+        "body": "Completed after the live mock-provider run.",
+        "createdAt": 1794640554494
+      }
+    ],
+    "proof": [
+      {
+        "id": "e34956b4-e01f-497a-849e-5a93300fb6cc",
+        "status": "passed",
+        "createdAt": 1794640554494,
+        "label": "mock run",
+        "command": "agent.wait",
+        "note": "Gateway returned ok."
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "f14078f0-b675-4e86-9833-1dac27cc8784",
+        "createdAt": 1794640554494,
+        "label": "synthetic proof",
+        "url": "https://example.com/proof"
+      }
+    ],
+    "automation": {
+      "workspaceAccess": {
+        "unrestricted": true
+      },
+      "summary": "Completed after the live mock-provider run."
+    },
+    "notifications": [
+      {
+        "id": "44d173c4-c4a7-4519-9486-f00f8b688c00",
+        "kind": "completed",
+        "createdAt": 1794640554494,
+        "sequence": 1794640554494000,
+        "message": "Completed after the live mock-provider run.",
+        "sessionKey": "agent:main:subagent:6e7bcaa4-7427-4279-a3e3-c1ed2dca1df4",
+        "runId": "f93035a3-07fc-4563-8b8a-33013ca6bb7c"
+      }
+    ]
+  },
+  "completedAt": 1794640554494
+}

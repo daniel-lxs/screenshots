@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {DatabaseSync} from 'node:sqlite';
+import {buildCompletionClaims,buildLifecycleObservation,buildVerification} from './proof-main-evidence.ts';
+const root='/tmp/lf2', proof=root+'/proof';
+const c=JSON.parse(fs.readFileSync(proof+'/legacy-created.json','utf8'));
+const runId=c.execution.runId, sessionKey=c.execution.sessionKey;
+const now=Date.now();
+const claims=buildCompletionClaims(c,[{statement:'Retained worker report from main.'}],c.agentId,now-3);
+const observation=buildLifecycleObservation(c,{outcome:'succeeded',sessionKey,runId,observedAt:now-2},now-2);
+c.metadata.automation={...c.metadata.automation,evidence:[...claims,observation]};
+const verdict=buildVerification(c,{scope:'s'.repeat(300),outcome:'confirmed',claimId:claims[0].id,artifactId:c.metadata.artifacts[0].id,runId,note:'n'.repeat(100)},'legacy-checker',now-1);
+c.metadata.automation.evidence.push(verdict);
+// This is an isolated compatibility fixture, seeded at the SQL persistence boundary.
+// Records are constructed by main 520f18975936's unchanged production builders.
+assert(Buffer.byteLength(JSON.stringify(c.metadata))<24576,'fixture must be valid in the card budget');
+const db=new DatabaseSync(root+'/fresh/plugins/workboard/workboard.sqlite');
+const result=db.prepare('UPDATE workboard_cards SET automation_json=? WHERE id=?').run(JSON.stringify(c.metadata.automation),c.id);
+assert.equal(result.changes,1);db.close();
+fs.writeFileSync(proof+'/legacy-seeded.json',JSON.stringify(c,null,2));
+fs.writeFileSync(proof+'/legacy-expected-verdict.json',JSON.stringify(Object.fromEntries(Object.entries(verdict).filter(([k])=>!['kind','claimId'].includes(k))),null,2));
+console.log('SEEDED main-format card',c.id,'bytes',Buffer.byteLength(JSON.stringify(c.metadata)),'attempts',c.metadata.attempts.length,'artifacts',c.metadata.artifacts.length);

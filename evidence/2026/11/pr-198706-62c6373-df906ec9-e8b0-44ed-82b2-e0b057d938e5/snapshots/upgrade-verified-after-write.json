@@ -1,0 +1,136 @@
+{
+  "id": "9b3e6eac-f571-41c5-9bb3-0c9ce9b67c04",
+  "title": "stable lifecycle and completion",
+  "status": "done",
+  "priority": "normal",
+  "labels": [],
+  "position": 1000,
+  "createdAt": 1794640674985,
+  "updatedAt": 1794640709306,
+  "agentId": "main",
+  "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a",
+  "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b",
+  "execution": {
+    "id": "9b3e6eac-f571-41c5-9bb3-0c9ce9b67c04:agent-session",
+    "kind": "agent-session",
+    "mode": "autonomous",
+    "status": "review",
+    "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a",
+    "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b",
+    "startedAt": 1794640674985,
+    "updatedAt": 1794640678112
+  },
+  "startedAt": 1794640674985,
+  "completedAt": 1794640678477,
+  "events": [
+    {
+      "id": "a519c866-2dca-42be-9fd6-37f915f880da",
+      "kind": "created",
+      "at": 1794640674985,
+      "toStatus": "running",
+      "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a"
+    },
+    {
+      "id": "fd47caf5-e98d-4230-87c9-b13a2e1d20e4",
+      "kind": "moved",
+      "at": 1794640678117,
+      "fromStatus": "running",
+      "toStatus": "review"
+    },
+    {
+      "id": "457a11f7-3e71-409b-a239-b7a345e3fda1",
+      "kind": "claimed",
+      "at": 1794640678463
+    },
+    {
+      "id": "4a3e9d2e-9aac-45ac-978a-66846a631a39",
+      "kind": "moved",
+      "at": 1794640678477,
+      "fromStatus": "review",
+      "toStatus": "done"
+    },
+    {
+      "id": "b0c2270b-ccb1-4ab1-a1cf-9aefd33f5c96",
+      "kind": "edited",
+      "at": 1794640709300
+    },
+    {
+      "id": "25d0b973-e9ce-46ee-84a0-59040ed805a7",
+      "at": 1794640709306,
+      "kind": "comment_added"
+    }
+  ],
+  "metadata": {
+    "attempts": [
+      {
+        "id": "7b2c66d0-25b8-4a79-8659-b5e12bae1b9f",
+        "status": "succeeded",
+        "startedAt": 1794640674985,
+        "mode": "autonomous",
+        "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a",
+        "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b",
+        "endedAt": 1794640678112
+      }
+    ],
+    "comments": [
+      {
+        "id": "0cd0d324-269a-4b04-8605-c5d2d98c662b",
+        "body": "Completed after the live mock-provider run.",
+        "createdAt": 1794640678477
+      },
+      {
+        "id": "da8d54ac-9489-4bbb-9b4e-0f45b0907faf",
+        "body": "Later write after verification.",
+        "createdAt": 1794640709305
+      }
+    ],
+    "proof": [
+      {
+        "id": "008d6dfb-5acd-451d-8c4d-7e28f3541fdf",
+        "status": "passed",
+        "createdAt": 1794640678477,
+        "label": "mock run",
+        "command": "agent.wait",
+        "note": "Gateway returned ok."
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "1d186f0f-d607-4910-a3ab-2b8ef74a44d4",
+        "createdAt": 1794640678477,
+        "label": "synthetic proof",
+        "url": "https://example.com/proof"
+      }
+    ],
+    "automation": {
+      "workspaceAccess": {
+        "unrestricted": true
+      },
+      "summary": "Completed after the live mock-provider run.",
+      "verifications": [
+        {
+          "id": "0735b71d-9e80-4d31-bd08-64723baf4bf4",
+          "recordedAt": 1794640709299,
+          "checkerId": "checker",
+          "checkedOwnWork": false,
+          "scope": "Checked the live Gateway run, succeeded attempt, worker proof and artifact.",
+          "outcome": "confirmed",
+          "proofId": "008d6dfb-5acd-451d-8c4d-7e28f3541fdf",
+          "artifactId": "1d186f0f-d607-4910-a3ab-2b8ef74a44d4",
+          "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b"
+        }
+      ]
+    },
+    "notifications": [
+      {
+        "id": "f06ac581-438f-411a-9d28-aefe056b7b71",
+        "kind": "completed",
+        "createdAt": 1794640678477,
+        "sequence": 1794640678477000,
+        "message": "Completed after the live mock-provider run.",
+        "sessionKey": "agent:main:subagent:8cedc5a4-eb38-4362-829b-22ce182a9a8a",
+        "runId": "cf9fe72b-bbc0-451a-a2db-422c75518f3b"
+      }
+    ]
+  }
+}

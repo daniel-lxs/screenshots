@@ -1,0 +1,84 @@
+$ node scripts/run-node.mjs gateway run
+[openclaw] Syncing runtime artifacts (runtime_postbuild_input_mtime_newer - runtime postbuild input mtime newer than stamp).
+[plugin-control-plane-loads] verified 56 built modules with native require and checked doctor closures
+runtime-postbuild: 14 phases completed in 8372ms (slowest: previous release update compat chunks 1996ms)
+[openclaw] Staging pinned Bun fork openclaw-v1.4.4-20261026-191755ec11-webkit-b82bc917e9 (one-time download)…
+[gateway] startup phase: entry.run-main-import starting total=199.9ms
+[gateway] startup phase: entry.run-main-import 16.2ms total=216.1ms start=199.9ms rssMb=34.3 heapUsedMb=4.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-select-environment starting total=377.9ms
+[gateway] startup phase: cli.main.gateway-run-select-environment-imports starting total=378.0ms
+[gateway] startup phase: cli.main.gateway-run-select-environment-imports 42.7ms total=420.7ms start=378.0ms rssMb=95.1 heapUsedMb=21.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-guard starting total=421.9ms
+[gateway] startup phase: cli.environment.imports starting total=422.1ms
+[gateway] startup phase: cli.environment.imports 0.7ms total=422.8ms start=422.1ms rssMb=95.2 heapUsedMb=21.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-import starting total=424.5ms
+[gateway] startup phase: cli.environment.config-import 69.4ms total=493.9ms start=424.5ms rssMb=122.3 heapUsedMb=27.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-read starting total=496.6ms
+[gateway] startup phase: cli.environment.config-read 24.1ms total=520.7ms start=496.6ms rssMb=130.0 heapUsedMb=33.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-recovery starting total=522.9ms
+[gateway] startup phase: cli.environment.config-recovery 0.2ms total=523.1ms start=522.9ms rssMb=130.0 heapUsedMb=33.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-guard 102.9ms total=524.8ms start=421.9ms rssMb=130.0 heapUsedMb=33.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.pin-runtime-paths starting total=526.4ms
+[gateway] startup phase: cli.environment.pin-runtime-paths 0.2ms total=526.6ms start=526.4ms rssMb=130.0 heapUsedMb=33.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-select-environment 150.2ms total=528.2ms start=377.9ms rssMb=130.0 heapUsedMb=33.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-imports starting total=538.3ms
+[gateway] startup phase: cli.main.gateway-run-imports 0.9ms total=539.2ms start=538.3ms rssMb=131.2 heapUsedMb=34.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap starting total=548.0ms
+[gateway] startup phase: cli.environment.imports starting total=548.2ms
+[gateway] startup phase: cli.environment.imports 0.1ms total=548.3ms start=548.2ms rssMb=135.1 heapUsedMb=36.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-import starting total=550.4ms
+[gateway] startup phase: cli.environment.config-import 0.0ms total=550.4ms start=550.4ms rssMb=135.4 heapUsedMb=36.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-read starting total=552.0ms
+[gateway] startup phase: cli.environment.config-read 1.2ms total=553.2ms start=552.0ms rssMb=135.6 heapUsedMb=36.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.environment.config-recovery starting total=554.8ms
+[gateway] startup phase: cli.environment.config-recovery 0.1ms total=554.8ms start=554.8ms rssMb=135.6 heapUsedMb=36.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-pre-bootstrap 8.4ms total=556.4ms start=548.0ms rssMb=135.6 heapUsedMb=36.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.main.gateway-run-bootstrap starting total=557.8ms
+[gateway] startup phase: cli.command.config-ready starting total=558.5ms
+[gateway] startup phase: cli.command.config-guard-import starting total=558.6ms
+[gateway] startup phase: cli.command.config-guard-import 7.9ms total=566.5ms start=558.6ms rssMb=138.3 heapUsedMb=36.8 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.live-owner starting total=572.4ms
+[gateway] startup phase: cli.bootstrap.admission.live-owner 1.4ms total=573.9ms start=572.4ms rssMb=139.7 heapUsedMb=37.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.core-config starting total=575.6ms
+[gateway] startup phase: cli.bootstrap.admission.core-config 1.7ms total=577.3ms start=575.6ms rssMb=140.7 heapUsedMb=37.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot starting total=579.0ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery starting total=579.4ms
+[gateway] startup phase: cli.bootstrap.admission.core-recovery 0.0ms total=579.4ms start=579.4ms rssMb=140.8 heapUsedMb=37.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import starting total=581.0ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-config starting total=581.0ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-metadata-completion starting total=582.7ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-metadata-completion 0.1ms total=582.7ms start=582.7ms rssMb=141.0 heapUsedMb=38.0 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-runtime-import 135.3ms total=716.2ms start=581.0ms rssMb=190.4 heapUsedMb=45.6 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.database-readiness starting total=720.2ms
+[gateway] startup phase: cli.bootstrap.admission.database-readiness 3.5ms total=723.6ms start=720.2ms agentCount=2 schemaProcessCount=0 schemaInspectionCount=0 schemaSnapshotCount=0 statePreflightMs=0.2286669999999731 agentPreflightMs=0.5232500000000755 rssMb=190.5 heapUsedMb=45.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.session-runtime-import starting total=727.6ms
+[gateway] startup phase: cli.bootstrap.admission.session-runtime-import 3.0ms total=730.6ms start=727.6ms rssMb=190.6 heapUsedMb=45.9 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.session-targets starting total=734.2ms
+[gateway] startup phase: cli.bootstrap.admission.session-targets 2.1ms total=736.3ms start=734.2ms agentCount=2 registeredDatabaseCount=0 rssMb=190.6 heapUsedMb=46.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.session-readiness starting total=739.8ms
+[gateway] startup phase: cli.bootstrap.admission.session-readiness 0.1ms total=739.8ms start=739.8ms targetCount=2 rssMb=190.6 heapUsedMb=46.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.workspace-runtime-import starting total=743.3ms
+[gateway] startup phase: cli.bootstrap.admission.plugin-config 168.3ms total=749.3ms start=581.0ms rssMb=191.0 heapUsedMb=47.0 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.workspace-runtime-import 10.7ms total=754.1ms start=743.3ms rssMb=191.1 heapUsedMb=47.0 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.workspace-readiness starting total=757.7ms
+[gateway] startup phase: cli.bootstrap.admission.workspace-readiness 1.5ms total=759.3ms start=757.7ms agentCount=2 rssMb=191.1 heapUsedMb=47.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.config-recovery starting total=762.5ms
+[gateway] startup phase: cli.bootstrap.admission.config-recovery 0.1ms total=762.5ms start=762.5ms rssMb=191.1 heapUsedMb=47.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.config-guard starting total=765.6ms
+[gateway] startup phase: cli.bootstrap.admission.config-guard 0.2ms total=765.9ms start=765.6ms rssMb=191.1 heapUsedMb=47.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+[gateway] startup phase: cli.bootstrap.admission.state-snapshot 190.0ms total=769.0ms start=579.0ms rssMb=191.1 heapUsedMb=47.1 workers=0 workerHeapSamples=0/0 workerHeapMb=0.0 workerHeapSource=cached
+OpenClaw config is invalid
+File: /tmp/lf2/fresh/openclaw.json
+Problem:
+  - agents.ownership: multi-agent rosters require agents.ownership="explicit" or one legacy default=true marker; add agents.ownership="explicit" or run openclaw doctor
+Legacy config keys detected:
+  - agents.defaults.models: Legacy agents.defaults.models restricts model overrides; run "openclaw doctor --fix" to migrate valid refs to agents.defaults.modelPolicy.allow.
+  - plugins: Plugin policy written while Skill Workshop was built in needs migration so Skill Workshop keeps running. Run "openclaw doctor --fix".
+  - agents: Legacy ambient operations have no system-agent owner; run "openclaw doctor --fix" to set agents.defaults.systemAgent.agentId from the default agent.
+
+Inspect: openclaw config validate
+Audit, status, health, logs, and doctor commands still run with invalid config.
+Run "openclaw doctor --fix" to repair the config, then retry.
+[gateway] startup phase: cli.command.config-ready 246.0ms total=804.6ms start=558.5ms rssMb=189.3 heapUsedMb=48.8 workers=1 workerHeapSamples=0/1
+[gateway] startup phase: cli.main.gateway-run-bootstrap 250.3ms total=808.1ms start=557.8ms failed rssMb=190.5 heapUsedMb=48.8 workers=1 workerHeapSamples=0/1
+[ELIFECYCLE] Command failed with exit code 78.
